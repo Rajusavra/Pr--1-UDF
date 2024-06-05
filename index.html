@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // QS - 1 with Simple function
+
+      // function mynnumber() {
+      //     let n = parseInt(prompt("enter any number"));
+      //   if (n === 0) {
+      //     return console.log("The number is zero.");
+      //   } else if (n > 0) {
+      //     return console.log("The number is positive.");
+      //   } else {
+      //     return console.log("The number is negative.");
+      //   }
+      // }
+      // mynnumber();
+
+      // QS - 1 with Arrow function , parameter
+
+      // let mynnumber = (n) => {
+      //   if (n === 0) return console.log("The number is zero.");
+      //   else if (n > 0) return console.log("The number is positive.");
+      //   else return console.log("The number is negative.");
+      // };
+      // mynnumber(parseInt(prompt("enter any number")));
+
+      // QS - 1 End ------------------------>
+
+      // QS - 2 Without use of return
+
+      // function mynnumber(n) {
+      //   if (n === 0) {
+      //     console.log("The number is zero.");
+      //   } else if (n > 0) {
+      //     console.log("The number is positive.");
+      //   } else {
+      //     console.log("The number is negative.");
+      //   }
+      // }
+      // mynnumber(parseInt(prompt("enter any number")));
+
+      // QS - 2 End ------------------------>
+
+      // QS - 3 with Simple function
+
+      // function number(a, b, c, d) {
+      //   if (a >= b) {
+      //     if (a >= c) {
+      //       if (a >= d) {
+      //         return document.write("A is max : ", a);
+      //       } else {
+      //         return document.write("D is max : ", d);
+      //       }
+      //     } else {
+      //       if (c >= d) {
+      //         return document.write("C is max : ", c);
+      //       } else {
+      //         return document.write("D is max : ", d);
+      //       }
+      //     }
+      //   } else {
+      //     if (b >= c) {
+      //       if (b >= d) {
+      //         return document.write("B is max : ", b);
+      //       } else {
+      //         return document.write("D is max : ", d);
+      //       }
+      //     } else {
+      //       if (c >= d) {
+      //         return document.write("C is max : ", c);
+      //       } else {
+      //         return document.write("D is max : ", d);
+      //       }
+      //     }
+      //   }
+      // }
+      // number(
+      //   parseInt(prompt("Enter the 1st number A:")),
+      //   parseInt(prompt("Enter the 2nd number B:")),
+      //   parseInt(prompt("Enter the 3rd number C:")),
+      //   parseInt(prompt("Enter the 4th number D:"))
+      // );
+
+      // QS - 3 with Arrow function
+
+      // let number = (a, b, c, d) => {
+      //   if (a >= b)
+      //     if (a >= c)
+      //       if (a >= d) return document.write("A is max : ", a);
+      //       else return document.write("D is max : ", d);
+      //     else if (c >= d) return document.write("C is max : ", c);
+      //     else return document.write("D is max : ", d);
+      //   else if (b >= c)
+      //     if (b >= d) return document.write("B is max : ", b);
+      //     else return document.write("D is max : ", d);
+      //   else if (c >= d) return document.write("C is max : ", c);
+      //   else return document.write("D is max : ", d);
+      // };
+      // number(
+      //   parseInt(prompt("Enter the 1st number A:")),
+      //   parseInt(prompt("Enter the 2nd number B:")),
+      //   parseInt(prompt("Enter the 3rd number C:")),
+      //   parseInt(prompt("Enter the 4th number D:"))
+      // );
+
+      // QS - 2 End ------------------------>
+
+      // QS - 4 with Simple function
+
+      // function number(a, b, c, d) {
+      //   if( a>=b  && a>=c  &&  a>=d){
+      //    return document.write("<h3> The maximum number is a :-", a);
+      // }else if ( b>=a && b>=c && b>=d ){
+      //    return document.write("<h3> The maximum number is b :-", b);
+      // }else if( c>=a && c>=b && c>=d ){
+      //    return document.write("<h3> The maximum number is c :-", c);
+      // }else{
+      //    return document.write("<h3> The maximum number is d :-", d);
+      // }
+      // }
+      // number(
+      //   parseInt(prompt("Enter the 1st number A:")),
+      //   parseInt(prompt("Enter the 2nd number B:")),
+      //   parseInt(prompt("Enter the 3rd number C:")),
+      //   parseInt(prompt("Enter the 4th number D:"))
+      // );
+
+      // QS - 4 with Arrow function
+
+      // let number = (a, b, c, d) => {
+      //   if (a >= b && a >= c && a >= d)
+      //     return document.write("<h3> The maximum number is a :-", a);
+      //   else if (b >= a && b >= c && b >= d)
+      //     return document.write("<h3> The maximum number is b :-", b);
+      //   else if (c >= a && c >= b && c >= d)
+      //     return document.write("<h3> The maximum number is c :-", c);
+      //   else return document.write("<h3> The maximum number is d :-", d);
+      // };
+      // number(
+      //   parseInt(prompt("Enter the 1st number A:")),
+      //   parseInt(prompt("Enter the 2nd number B:")),
+      //   parseInt(prompt("Enter the 3rd number C:")),
+      //   parseInt(prompt("Enter the 4th number D:"))
+      // );
+
+      // QS - 4 End ------------------------>
+
+      // QS - 5 With Simple function
+
+      // function calculate( a , b , choice , Ans) {
+
+      //   if (choice === '+') {
+      //       Ans = a + b;
+      //   } else if (choice === '-') {
+      //       Ans = a - b;
+      //   } else if (choice === '*') {
+
+      //       Ans = a * b;
+      //   } else if (choice === '/') {
+      //       if (b !== 0) {
+      //           Ans = a / b;
+      //       } else {
+      //           Ans = "Error: Division by zero";
+      //       }
+      //   } else {
+      //       alert(" ! Invalid operation :")
+      //   }
+
+      //  return document.write("Ans = " + Ans);
+      // }
+      // calculate(
+      //   parseFloat(prompt("Enter the first number A: ")),
+      //   parseFloat(prompt("Enter the second number B: ")),
+      //   prompt("Enter the operation (+, -, *, /): ")
+      // );
+
+      // QS - 5 With Arrow function
+
+      // let calculate = (a, b, choice, Ans) => {
+      //   if (choice === "+") Ans = a + b;
+      //   else if (choice === "-") Ans = a - b;
+      //   else if (choice === "*") Ans = a * b;
+      //   else if (choice === "/")
+      //     if (b !== 0) Ans = a / b;
+      //     else Ans = "Error: Division by zero";
+      //   else alert(" ! Invalid operation :");
+
+      //   return document.write("Ans = " + Ans);
+      // };
+      // calculate(
+      //   parseFloat(prompt("Enter the first number A: ")),
+      //   parseFloat(prompt("Enter the second number B: ")),
+      //   prompt("Enter the operation (+, -, *, /): ")
+      // );
+
+      // QS - 5 End ------------------------>
+
+      // QS - 6 With Simple function
+
+      // function swaping( a , b , c ) {
+      //   c = a ;
+      //   a = b ;
+      //   b = c ;
+
+      //   document.write("A = " + a + "<br>");
+      //   document.write("B = " + b);
+      // }
+      // swaping(
+      //   parseInt(prompt("Enter value of A")),
+      //   parseInt(prompt("Enter value of b"))
+      // );
+
+      // QS - 6 With Arrow function
+
+      // let swaping = ( a , b , c ) => {
+      //   c = a ;
+      //   a = b ;
+      //   b = c ;
+      //   document.write("A = " + a + "<br>");
+      //   document.write("B = " + b);
+      // }
+      // swaping(
+      //   parseInt(prompt("Enter value of A")),
+      //   parseInt(prompt("Enter value of b"))
+      // );
+
+      // QS - 6 End ------------------------>
+
+      // QS - 7 With Simple function
+
+      // function number(a, b, c) {
+      //   if (a >= b) {
+      //     if (a >= c) {
+      //      return console.log("a is maximum :-", a);
+      //     } else {
+      //      return console.log("c is maximum :-", c);
+      //     }
+      //   } else {
+      //     if (b >= c) {
+      //      return console.log("b is maximum :-", b);
+      //     } else {
+      //      return console.log("c is maximum :-", c);
+      //     }
+      //   }
+      // }
+      // number(
+      //   parseInt(prompt("Enter the 1st number A:")),
+      //   parseInt(prompt("Enter the 2nd number B:")),
+      //   parseInt(prompt("Enter the 3rd number C:"))
+      // );
+
+      // QS - 7 With Arrow function
+
+      // let number = (a, b, c) => {
+      //   if (a >= b)
+      //     if (a >= c) return console.log("a is maximum :-", a);
+      //     else return console.log("c is maximum :-", c);
+      //   else if (b >= c) return console.log("b is maximum :-", b);
+      //   else return console.log("c is maximum :-", c);
+      // };
+      // number(
+      //   parseInt(prompt("Enter the 1st number A:")),
+      //   parseInt(prompt("Enter the 2nd number B:")),
+      //   parseInt(prompt("Enter the 3rd number C:"))
+      // );
+
+      // QS - 7 End ------------------------>
+
+      // QS - 8 With Simple function
+
+      // function calculation(a , b , choice , Ans) {
+
+      // switch (choice) {
+      //   case "+":
+      //     Ans = a + b;
+      //     break;
+      //   case "-":
+      //     Ans = a - b;
+      //     break;
+      //   case "*":
+      //     Ans = a * b;
+      //     break;
+      //   case "/":
+      //     if (b !== 0) {
+      //       Ans = a / b;
+      //     } else {
+      //       Ans = "Error: Division by zero";
+      //     }
+      //     break;
+      //   default:
+      //     alert(" ! Invalid operation :")
+      // }
+
+      //   return document.write("Ans  = " + Ans);
+      // }
+      // calculation(
+      //   parseInt(prompt("Enter the 1st number A: ")),
+      //   parseInt(prompt("Enter the 2nd number B: ")),
+      //   prompt("Enter the operation (+, -, *, /): ")
+      // );
+
+      // QS - 8 With Arrow function
+
+      // let calculation = (a, b, choice, Ans) => {
+      //   switch (choice) {
+      //     case "+":
+      //       Ans = a + b;
+      //       break;
+      //     case "-":
+      //       Ans = a - b;
+      //       break;
+      //     case "*":
+      //       Ans = a * b;
+      //       break;
+      //     case "/":
+      //       if (b !== 0) Ans = a / b;
+      //       else Ans = "Error: Division by zero";
+
+      //       break;
+      //     default:
+      //       alert(" ! Invalid operation :");
+      //   }
+      //   return document.write("Ans  = " + Ans);
+      // };
+      // calculation(
+      //   parseInt(prompt("Enter the 1st number A: ")),
+      //   parseInt(prompt("Enter the 2nd number B: ")),
+      //   prompt("Enter the operation (+, -, *, /): ")
+      // );
+
+      // QS - 8 End ------------------------>
+
+      // QS - 9 With Simple function
+
+      // function triangle( angle1 , angle2 , angle3) {
+      //   let sum = angle1 + angle2 + angle3;
+
+      //   if (sum === 180) {
+      //     document.write("The triangle with angles = " , sum , " is valid.");
+      //   } else {
+      //     document.write("The triangle with angles = " , sum , " is not valid.");
+      //   }
+      // }
+      // triangle(
+      //   parseInt(prompt("Enter the 1st angle of the triangle: ")),
+      //   parseInt(prompt("Enter the 2nd angle of the triangle: ")),
+      //   parseInt(prompt("Enter the 3rd angle of the triangle: ")),
+
+      // );
+
+      // QS - 9 With Arrow function
+
+      // let triangle = (angle1, angle2, angle3) => { let sum = angle1 + angle2 + angle3; 
+      //   if (sum === 180) document.write("The triangle with angles = ", sum, " is valid.");
+      //   else document.write("The triangle with angles = ", sum, " is not valid.");
+      // };
+      // triangle(
+      //   parseInt(prompt("Enter the 1st angle of the triangle: ")),
+      //   parseInt(prompt("Enter the 2nd angle of the triangle: ")),
+      //   parseInt(prompt("Enter the 3rd angle of the triangle: "))
+      // );
+
+      // QS - 9 End ------------------------>
+
+
+
+      // QS - 10 With Simple function
+
+      // function voting(age) {
+      // if(age<18){
+      //   document.write("<h3> You are not eligible for vote...<br> <strong> Please wait for be 18 years...<br> ");
+      // }else if(age >= 18){
+      //   document.write("<h3> You are eligible for vote...<br> <strong> Please vote...<br> ");
+      // }else{
+      //   alert(" Please enter valid age... ! Please try again ");
+      // }
+      // }
+      // voting(
+      //   parseInt(prompt("Enter your age in year..."))
+      // );
+
+      // QS - 10 With Arrow function
+
+      // let voting = (age) => {
+      // if(age<18) document.write("<h3> You are not eligible for vote...<br> <strong> Please wait for be 18 years...<br> ");
+      // else if(age >= 18) document.write("<h3> You are eligible for vote...<br> <strong> Please vote...<br> ");
+      // else alert(" Please enter valid age... ! Please try again ");
+      // }
+      // voting(
+      //   parseInt(prompt("Enter your age in year..."))
+      // );
+
+      // QS - 10 End ------------------------>
+
+    </script>
+  </body>
+</html>
